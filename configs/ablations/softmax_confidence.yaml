@@ -1,0 +1,8 @@
+# Ablation 6: Replace NOVA evidential vacuity with softmax confidence
+defaults:
+  - ../base
+ablation: softmax_confidence
+confidence_source: softmax
+emn:
+  eviction_strategy: vacuity
+  retrieval_vacuity_weight: 1.0

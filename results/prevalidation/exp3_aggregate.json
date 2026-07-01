@@ -1,0 +1,110 @@
+{
+  "softmax": {
+    "method": "softmax",
+    "confabulation_rate": 0.0,
+    "hedging_rate": 0.0,
+    "update_rate": 0.04,
+    "auroc": 0.5,
+    "auprc": 0.06666666666666667,
+    "ece": 0.025530697368085387,
+    "n_items": 100,
+    "per_severity": {
+      "1": {
+        "confabulation_rate": 0.0
+      },
+      "2": {
+        "confabulation_rate": 0.0
+      },
+      "3": {
+        "confabulation_rate": 0.0
+      },
+      "4": {
+        "confabulation_rate": 0.0
+      },
+      "5": {
+        "confabulation_rate": 0.0
+      }
+    }
+  },
+  "temperature": {
+    "method": "temperature",
+    "confabulation_rate": 0.0,
+    "hedging_rate": 0.0,
+    "update_rate": 0.04,
+    "auroc": 0.5,
+    "auprc": 0.06666666666666667,
+    "ece": 0.030323474630713464,
+    "n_items": 100,
+    "per_severity": {
+      "1": {
+        "confabulation_rate": 0.0
+      },
+      "2": {
+        "confabulation_rate": 0.0
+      },
+      "3": {
+        "confabulation_rate": 0.0
+      },
+      "4": {
+        "confabulation_rate": 0.0
+      },
+      "5": {
+        "confabulation_rate": 0.0
+      }
+    }
+  },
+  "mc_dropout": {
+    "method": "mc_dropout",
+    "confabulation_rate": 0.0,
+    "hedging_rate": 0.0,
+    "update_rate": 0.04,
+    "auroc": 0.5,
+    "auprc": 0.04,
+    "ece": 0.039999,
+    "n_items": 100,
+    "per_severity": {
+      "1": {
+        "confabulation_rate": 0.0
+      },
+      "2": {
+        "confabulation_rate": 0.0
+      },
+      "3": {
+        "confabulation_rate": 0.0
+      },
+      "4": {
+        "confabulation_rate": 0.0
+      },
+      "5": {
+        "confabulation_rate": 0.0
+      }
+    }
+  },
+  "emn_vacuity": {
+    "method": "emn_vacuity",
+    "confabulation_rate": 0.0,
+    "hedging_rate": 0.0,
+    "update_rate": 0.04,
+    "auroc": 0.9166666666666667,
+    "auprc": 0.2,
+    "ece": 0.3693477487564087,
+    "n_items": 100,
+    "per_severity": {
+      "1": {
+        "confabulation_rate": 0.0
+      },
+      "2": {
+        "confabulation_rate": 0.0
+      },
+      "3": {
+        "confabulation_rate": 0.0
+      },
+      "4": {
+        "confabulation_rate": 0.0
+      },
+      "5": {
+        "confabulation_rate": 0.0
+      }
+    }
+  }
+}

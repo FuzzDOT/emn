@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\caption{Confabulation Benchmark Results (200 facts $\times$ 5 severity levels). All methods use TinyLlama-1.1B backbone.}
+\label{tab:confabulation}
+\begin{tabular}{lcccccc}
+\toprule
+Method & Confab Rate $\downarrow$ & Hedge Rate & Update Rate $\uparrow$ & AUROC $\uparrow$ & AUPRC $\uparrow$ & ECE $\downarrow$ \\
+\midrule
+Softmax & 0.000 & 0.000 & 0.040 & 0.500 & 0.067 & 0.026 \\
+Temp. Scaling & 0.000 & 0.000 & 0.040 & 0.500 & 0.067 & 0.030 \\
+MC Dropout & 0.000 & 0.000 & 0.040 & 0.500 & 0.040 & 0.040 \\
+\textbf{EMN Vacuity (Ours)} & 0.000 & 0.000 & 0.040 & 0.917 & 0.200 & 0.369 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,45 @@
+# Experiment 2: Continual Learning — Split-CIFAR100
+# Inherits: configs/base.yaml
+
+defaults:
+  - base
+
+experiment: continual_learning
+seeds: [42, 43, 44]
+
+benchmark:
+  name: SplitCIFAR100
+  n_tasks: 10
+  classes_per_task: 10
+
+emn:
+  d_model: 160       # SlimResNet18 feature dim (nf=20, nf*8=160)
+  memory_capacity: 500
+  eviction_strategy: vacuity
+  retrieval_vacuity_weight: 1.0
+
+training:
+  epochs: 5
+  lr: 0.01
+  batch_size: 128
+  momentum: 0.9
+  lambda_mem: 0.5
+  memory_batch_size: 64
+  sample_strategy: inverse_vacuity
+
+baselines:
+  - sequential_ft
+  - ewc
+  - si
+  - gem
+  - emn
+
+ewc:
+  lambda: 0.4
+
+si:
+  lambda: 0.1
+
+gem:
+  patterns_per_exp: 256
+  memory_strength: 0.5

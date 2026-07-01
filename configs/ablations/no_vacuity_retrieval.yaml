@@ -1,0 +1,7 @@
+# Ablation 1: Remove vacuity weighting from retrieval
+# score = cosine(q, m) only (no (1-v) factor)
+defaults:
+  - ../base
+ablation: no_vacuity_retrieval
+emn:
+  retrieval_vacuity_weight: 0.0

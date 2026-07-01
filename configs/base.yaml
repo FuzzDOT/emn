@@ -1,0 +1,30 @@
+# EMN Base Configuration
+# All experiment configs inherit from this.
+
+emn:
+  d_model: 384
+  n_classes: 256             # Dirichlet classes — matches NOVA
+  memory_capacity: 1000
+  eviction_strategy: vacuity # "vacuity" | "random" | "lru"
+  retrieval_vacuity_weight: 1.0
+  retrieval_backend: brute   # "brute" | "faiss"
+  faiss_probe_factor: 2
+
+write_gate:
+  d_model: ${emn.d_model}
+  n_classes: ${emn.n_classes}
+
+training:
+  seed: 42
+  device: cpu
+  lr: 0.01
+  batch_size: 128
+  epochs: 5
+
+logging:
+  results_dir: results
+  figures_dir: figures
+  wandb: false
+  wandb_project: emn
+
+confidence_source: evidential   # "evidential" | "softmax" | "temperature" | "mc_dropout" | "random" | "none"

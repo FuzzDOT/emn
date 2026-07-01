@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Continual Learning on Split-CIFAR100 (10 tasks, SlimResNet18). Results over seeds \{42, 43, 44\}.}
+\label{tab:continual_learning}
+\begin{tabular}{lcccc}
+\toprule
+Method & Avg Acc $\uparrow$ & BWT $\uparrow$ & FWT $\uparrow$ & Forgetting $\downarrow$ \\
+\midrule
+Sequential FT & 0.172 $\pm$ 0.006 & -0.566 $\pm$ 0.096 & 0.000 $\pm$ 0.000 & 0.567 $\pm$ 0.095 \\
+EWC & 0.214 $\pm$ 0.055 & -0.664 $\pm$ 0.124 & 0.000 $\pm$ 0.000 & 0.664 $\pm$ 0.124 \\
+SI & 0.188 $\pm$ 0.030 & -0.622 $\pm$ 0.087 & 0.000 $\pm$ 0.000 & 0.622 $\pm$ 0.087 \\
+GEM & 0.222 $\pm$ 0.054 & -0.619 $\pm$ 0.084 & 0.000 $\pm$ 0.000 & 0.619 $\pm$ 0.084 \\
+\textbf{EMN (Ours)} & 0.185 $\pm$ 0.040 & -0.589 $\pm$ 0.056 & 0.000 $\pm$ 0.000 & 0.589 $\pm$ 0.056 \\
+\bottomrule
+\end{tabular}
+\end{table}

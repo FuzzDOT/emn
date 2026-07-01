@@ -1,0 +1,8 @@
+# Ablation 3: Remove evidential head entirely; assign uniform vacuity=0.5
+defaults:
+  - ../base
+ablation: no_evidential_head
+confidence_source: none
+emn:
+  eviction_strategy: random
+  retrieval_vacuity_weight: 0.0

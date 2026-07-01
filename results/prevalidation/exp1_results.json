@@ -1,0 +1,52 @@
+{
+  "standard_transformer": {
+    "accuracy": 0.125,
+    "accuracy_std": 0.0,
+    "precision": 0.1225,
+    "precision_std": 0.0,
+    "recall": 0.12125,
+    "recall_std": 0.0,
+    "f1": 0.121875,
+    "f1_std": 0.0
+  },
+  "random_eviction": {
+    "accuracy": 0.375,
+    "accuracy_std": 0.0,
+    "precision": 0.3675,
+    "precision_std": 0.0,
+    "recall": 0.36375,
+    "recall_std": 0.0,
+    "f1": 0.365625,
+    "f1_std": 0.0
+  },
+  "lru_eviction": {
+    "accuracy": 0.375,
+    "accuracy_std": 0.0,
+    "precision": 0.3675,
+    "precision_std": 0.0,
+    "recall": 0.36375,
+    "recall_std": 0.0,
+    "f1": 0.365625,
+    "f1_std": 0.0
+  },
+  "titans_surprise": {
+    "accuracy": 0.375,
+    "accuracy_std": 0.0,
+    "precision": 0.3675,
+    "precision_std": 0.0,
+    "recall": 0.36375,
+    "recall_std": 0.0,
+    "f1": 0.365625,
+    "f1_std": 0.0
+  },
+  "emn": {
+    "accuracy": 0.375,
+    "accuracy_std": 0.0,
+    "precision": 0.3675,
+    "precision_std": 0.0,
+    "recall": 0.36375,
+    "recall_std": 0.0,
+    "f1": 0.365625,
+    "f1_std": 0.0
+  }
+}

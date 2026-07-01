@@ -1,0 +1,7 @@
+# Ablation 5: LRU eviction instead of vacuity-based eviction
+defaults:
+  - ../base
+ablation: lru_eviction
+emn:
+  eviction_strategy: lru
+  retrieval_vacuity_weight: 1.0

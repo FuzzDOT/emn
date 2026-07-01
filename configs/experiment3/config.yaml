@@ -1,0 +1,33 @@
+# Experiment 3: Confabulation Benchmark
+# Inherits: configs/base.yaml
+
+defaults:
+  - base
+
+experiment: confabulation
+seed: 42
+
+benchmark:
+  name: ConfabulationBenchmark
+  n_facts: 200
+  n_severities: 5
+  total_items: 1000
+  dataset_path: data/confabulation_benchmark.jsonl
+
+model:
+  name: TinyLlama/TinyLlama-1.1B-Chat-v1.0
+  max_new_tokens: 64
+
+emn:
+  d_model: 2048        # TinyLlama hidden size
+  n_classes: 256
+  eviction_strategy: vacuity
+
+methods:
+  - softmax
+  - temperature
+  - mc_dropout
+  - emn_vacuity
+
+temperature_scale: 1.5
+mc_passes: 10

@@ -1,0 +1,5 @@
+Method,confabulation_rate,hedging_rate,update_rate,auroc,auprc,ece
+softmax,0.000,0.000,0.040,0.500,0.067,0.026
+temperature,0.000,0.000,0.040,0.500,0.067,0.030
+mc_dropout,0.000,0.000,0.040,0.500,0.040,0.040
+emn_vacuity,0.000,0.000,0.040,0.917,0.200,0.369

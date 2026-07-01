@@ -1,0 +1,19 @@
+# Experiment 1: Selective Forgetting — MemoryAgentBench
+# Inherits: configs/base.yaml
+
+defaults:
+  - base
+
+experiment: selective_forgetting
+seeds: [42, 43, 44]
+
+emn:
+  d_model: 384
+  memory_capacity: 50
+  eviction_strategy: vacuity
+  retrieval_vacuity_weight: 1.0
+
+benchmark:
+  name: MemoryAgentBench
+  task: FactConsolidation
+  max_items: null  # null = full benchmark

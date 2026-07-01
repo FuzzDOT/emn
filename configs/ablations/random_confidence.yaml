@@ -1,0 +1,8 @@
+# Ablation 4: Replace NOVA vacuity with uniform random confidence
+defaults:
+  - ../base
+ablation: random_confidence
+confidence_source: random
+emn:
+  eviction_strategy: vacuity
+  retrieval_vacuity_weight: 1.0

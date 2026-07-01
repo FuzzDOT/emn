@@ -1,0 +1,52 @@
+{
+  "sequential_ft": {
+    "average_accuracy": 0.1722222235467699,
+    "average_accuracy_std": 0.006350532176337584,
+    "backward_transfer": -0.5661111076672872,
+    "backward_transfer_std": 0.09586190486699603,
+    "forward_transfer": 0.0,
+    "forward_transfer_std": 0.0,
+    "forgetting": 0.5672222177187601,
+    "forgetting_std": 0.09506657199066762
+  },
+  "ewc": {
+    "average_accuracy": 0.21407407315240967,
+    "average_accuracy_std": 0.05459415160230697,
+    "backward_transfer": -0.6644444415966669,
+    "backward_transfer_std": 0.12400965571183022,
+    "forward_transfer": 0.0,
+    "forward_transfer_std": 0.0,
+    "forgetting": 0.6644444415966669,
+    "forgetting_std": 0.12400965571183022
+  },
+  "si": {
+    "average_accuracy": 0.18814814753002587,
+    "average_accuracy_std": 0.029597204348515562,
+    "backward_transfer": -0.6222222248713175,
+    "backward_transfer_std": 0.08652053375427705,
+    "forward_transfer": 0.0,
+    "forward_transfer_std": 0.0,
+    "forgetting": 0.6222222248713175,
+    "forgetting_std": 0.08652053375427705
+  },
+  "gem": {
+    "average_accuracy": 0.22185185468859145,
+    "average_accuracy_std": 0.053919108597674625,
+    "backward_transfer": -0.6188888798157374,
+    "backward_transfer_std": 0.08448464354869743,
+    "forward_transfer": 0.0,
+    "forward_transfer_std": 0.0,
+    "forgetting": 0.6188888798157374,
+    "forgetting_std": 0.08448464354869743
+  },
+  "emn": {
+    "average_accuracy": 0.18518518242571091,
+    "average_accuracy_std": 0.03960019475953551,
+    "backward_transfer": -0.5894444435834885,
+    "backward_transfer_std": 0.05568318739127475,
+    "forward_transfer": 0.0,
+    "forward_transfer_std": 0.0,
+    "forgetting": 0.5894444435834885,
+    "forgetting_std": 0.05568318739127475
+  }
+}

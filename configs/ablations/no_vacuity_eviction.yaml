@@ -1,0 +1,6 @@
+# Ablation 2: Replace vacuity eviction with random eviction
+defaults:
+  - ../base
+ablation: no_vacuity_eviction
+emn:
+  eviction_strategy: random
